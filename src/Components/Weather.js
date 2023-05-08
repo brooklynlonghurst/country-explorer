@@ -15,7 +15,7 @@ const Weather = () => {
             url: 'https://weatherapi-com.p.rapidapi.com/current.json',
             params: {q: `${latitude}, ${longitude}`},
             headers: {
-                'X-RapidAPI-Key': '6d4c45d270mshd84b3b7815226ffp161c08jsn3de291b9e2e7',
+                'X-RapidAPI-Key': process.env.REACT_APP_API_KEY,
                 'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
             }
         };
